@@ -1,5 +1,5 @@
 // Function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// If there is no license, returns an empty string
 function renderLicenseBadge(license) {
   if (license === "MIT") {
     return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
@@ -12,19 +12,63 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+// Function that returns the license link
+// If there is no license, returns an empty string
+function renderLicenseLink(license) {
+  if (license === "MIT") {
+    return "[MIT License](https://opensource.org/licenses/MIT)";
+  } else if (license === "Apache 2.0") {
+    return "[Apache 2.0 License](https://opensource.org/licenses/Apache-2.0)";
+  } else if (license === "BSD 3-Clause") {
+    return "[BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)";
+  } else {
+    return "";
+  }
+}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+// Function that returns the license section of README
+// If there is no license, returns an empty string
+function renderLicenseSection(license) {
+  if (license) {
+    return `## License
+    This project is licensed under the ${license} license.`;
+  } else {
+    return "";
+  }
+}
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(data) {
+  const data = {
+    title,
+    description,
+    installation,
+    usage,
+    credits,
+  };
   return `# ${data.title}
 
-`;
+  ## Description
+  ${data.description}
+
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+
+  ## Installation
+  ${data.installation}
+
+  ## Usage
+  ${data.usage}
+
+  ## Credits
+  ${data.credits}
+
+  ${renderLicenseSection()}
+  ${renderLicenseBadge()}
+  ${renderLicenseLink()}`;
 }
 
 export default generateMarkdown;
