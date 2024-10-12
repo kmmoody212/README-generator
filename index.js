@@ -17,19 +17,39 @@ const questions = [
   },
   {
     type: "input",
-    message: "How do you use this project?",
-    name: "usage",
+    message: "What are the steps to installing your project?",
+    name: "installation",
   },
   {
     type: "input",
-    message: "What are the steps to installing your project?",
-    name: "installation",
+    message: "How do you use this project?",
+    name: "usage",
   },
   {
     type: "list",
     message: "Please select a license.",
     name: "license",
     choices: ["MIT", "Apache 2.0", "BSD 3-Clause"],
+  },
+  {
+    type: "input",
+    message: "What are the contribution guidelines for this project?",
+    name: "contributing",
+  },
+  {
+    type: "input",
+    message: "How can viewers run tests on your project?",
+    name: "tests",
+  },
+  {
+    type: "input",
+    message: "What is your GitHub username?",
+    name: "github",
+  },
+  {
+    type: "input",
+    message: "What is your email address?",
+    name: "email",
   },
 ];
 
