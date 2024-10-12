@@ -1,7 +1,7 @@
-# README Test
+# 
 
   ## Description
-  This is a test for generating a README file.
+  
 
   ## Table of Contents
   - [Installation](#installation)
@@ -10,10 +10,10 @@
   - [License](#license)
 
   ## Installation
-  You will need to have npm installed by typing "npm i" in your terminal
+  
 
   ## Usage
-  Through Node.js
+  
 
   ## Credits
   undefined
