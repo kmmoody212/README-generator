@@ -26,6 +26,7 @@ Users will need to:
 ## Usage
 
 You will need to enter `node index.js` in your terminal and answer the questions that follow in order to create your README.md file.
+[Video Demonstration](https://drive.google.com/file/d/1hbLyt2N_0s9kYMsT8kBfKBT_0WjhJXov/view?usp=drive_link)
 
 ## License
 
