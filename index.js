@@ -45,12 +45,12 @@ function writeToFile(fileName, data) {
   });
 }
 
-// TODO: Create a function to initialize app
+// Function to initialize app
 async function init() {
   try {
     const answers = await inquirer.prompt(questions);
     const markdownContent = generateMarkdown(answers);
-    writeToFile("README.md", markdownContent);
+    writeToFile("generatedREADME.md", markdownContent);
   } catch (error) {
     console.error("Error initializing the app", error);
   }
